@@ -1,0 +1,1840 @@
+@prefix : <http://uri.suomi.fi/datamodel/ns/ryyo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://uri.suomi.fi/datamodel/ns/ryyo> .
+
+<http://uri.suomi.fi/datamodel/ns/ryyo> rdf:type owl:Ontology ;
+                                         owl:versionIRI <http://uri.suomi.fi/datamodel/ns/ryyo/0.1> ;
+                                         owl:imports <http://www.opengis.net/ont/geosparql> ,
+                                                     <http://www.opengis.net/ont/sf> ,
+                                                     <http://www.w3.org/2006/time> ,
+                                                     <http://www.w3.org/ns/prov#> ;
+                                         <http://purl.org/dc/elements/1.1/contributor> "Johanna Jalas"@fi ,
+                                                                                       "Marko Kauppi"@fi ,
+                                                                                       "Riikka Huttunen"@fi ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Otso Helenius"@fi ;
+                                         rdfs:comment "Ontologia on tuotettu RYTJ:n käsite- ja loogisen tietomallin tuottamisen ohessa, ja se on tämän version kuvaamassa muodossa karkea luonnos RYTJ:n hallinnoimien rakennetun ympäristön tietojen formaalista semanttisesta rakenteesta OWL-ontologiana. Tätä mallia tulkitessa tulee huomioida, että ontologia on tuotettu hyvin nopealla aikataululla laajasta lähtöaineistosta ja sitä ei ole validoitu tuotantokäyttöön."@fi ,
+                                                      "Ontologiaan ei ole vielä ydistetty suoraan SKOS-muotoista RYTJ-sanastoa kuvaamaan luokkia vastaavia käsitteitä; käsitevastaavuudet voi tarkistaa Y-alustalta (http://uri.suomi.fi/terminology/rytj/). Rakenteen vastaavuus prosesseja, niiden osia ym. kuvaavien käsitteiden osalta ei ole identtinen johtuen käytetyn PROV-O-ontologian ylärakenteiden noudattamisesta."@fi ,
+                                                      "Ontologian dokumentaatio on generoity pyLODElla ontdoc-profiilia. Valitettavasti kyseinen profiili ei oletuksena kuvaa kompleksisempia ominaisuusrajoitteita (esim. xsd:pattern) eikä esitä datatyyppejä. Profiilista ehdittiin projektin aikana tehdä minimaalisesti päivitetty versio joka ei kuitenkaan vielä kata näitä puutteita."@fi ,
+                                                      "Ontologian tuottamisessa on selvitetty W3C:n Time-ontologian käyttöä ajallisten entiteettien kuvailuun, OGC:n GeoSPARQL-ontologian käyttöä spatiaalisten entiteettien kuvailuun, W3C:n PROV-O-ontologian käyttöä subjektien, toiminnan ja toiminnan kohteiden välisen tapahtuma- ja muutoshistorian kuvailuun, sekä IFCOWL-ontologian käyttöä rakennustietovarannon entiteettien määrittämiseen. Näistä GeoSPARQL, PROV-O ja Time ovat alustavasti ehdotusluonteisesti käytössä maankäyttökohteille sekä prosesseille. GeoSPARQL:stä käytössä on vakaa 1.0-versio, sillä 1.1 on epävakaa ja edelleen aktiivisesti työn alla. Tämä kuitenkin tarkoittaa sitä, että tämä malli ei pääse hyötymään lukuisista 1.1:een tehdyistä parannuksista ja korjauksista."@fi ,
+                                                      "Tämän ontologian tulkitsemiseen suositellaan seuraavia helppolukuisia teoksia: 1) Moreau, L., & Groth, P. (2013). Provenance: An introduction to PROV. Morgan & Claypool. https://doi.org/10.2200/S00528ED1V01Y201308WBE007 2) Uschold, M. (2018). Demystifying OWL for the Enterprise. Synthesis Lectures on the Semantic Web: Theory and Technology, 8(1), i–237. https://doi.org/10.2200/S00824ED1V01Y201801WBE017 3) Lappalainen, M. (2014). Yläontologiat ja yleisen suomalaisen ontologian ylärakenne: ONKI-projektin toteuttamat muutokset. Kansalliskirjasto. http://urn.fi/URN:ISBN:978-951-51-0347-5"@fi ;
+                                         owl:versionInfo "synkronointi RYTJ-käsitemallin kanssa tehty viimeksi 26.11.2021"@fi ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "RYTJ:n Rakennetun Ympäristön YläOntologia (RYYO)"@fi .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ainf.aau.at/ontodebug#axiom
+<http://ainf.aau.at/ontodebug#axiom> rdf:type owl:AnnotationProperty .
+
+
+###  http://ainf.aau.at/ontodebug#type
+<http://ainf.aau.at/ontodebug#type> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minCardinality
+owl:minCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus
+:kiinteistotunnus rdf:type rdfs:Datatype ;
+                  owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                        owl:onDatatype xsd:string ;
+                                        owl:withRestrictions ( [ xsd:pattern "[0-9]{14}"
+                                                               ]
+                                                             )
+                                      ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri
+:kuutiometri rdf:type rdfs:Datatype ;
+             rdfs:comment "tilapäinen datatyyppi kuutiometrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"@fi ;
+             owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                   owl:onDatatype xsd:decimal ;
+                                   owl:withRestrictions ( [ xsd:minInclusive 0
+                                                          ]
+                                                        )
+                                 ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#neliometri
+:neliometri rdf:type rdfs:Datatype ;
+            rdfs:comment "tilapäinen datatyyppi neliömetrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"@fi ;
+            owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:decimal ;
+                                  owl:withRestrictions ( [ xsd:minInclusive 0
+                                                         ]
+                                                       )
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka
+:paloluokka rdf:type rdfs:Datatype ;
+            rdfs:comment "tietotyyppi paloluokituksen koodiston enumeraatioille"@fi ;
+            owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:anyURI ;
+                                  owl:withRestrictions ( [ xsd:pattern "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*"
+                                                         ]
+                                                       )
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain
+:porraskirjain rdf:type rdfs:Datatype ;
+               owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                     owl:onDatatype xsd:string ;
+                                     owl:withRestrictions ( [ xsd:pattern "[0-9]+[A-ZÖÅÄ]+[a-zöåä]+"
+                                                            ]
+                                                          )
+                                   ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus
+:pysyvaHuoneistotunnus rdf:type rdfs:Datatype .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus
+:pysyvaRakennustunnus rdf:type rdfs:Datatype ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:pattern "1[0-9]{8}[A-ZÖÅÄ]"
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus
+:pysyvaTilatunnus rdf:type rdfs:Datatype .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila
+:rakennuksenElinkaarenTila rdf:type rdfs:Datatype ;
+                           rdfs:comment "tietotyyppi rakennuksen elinkaaren koodiston enumeraatioille"@fi ;
+                           owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                 owl:onDatatype xsd:anyURI ;
+                                                 owl:withRestrictions ( [ xsd:pattern "http://uri\\.suomi\\.fi/codelist/rakrek/rakelinvaih.*"
+                                                                        ]
+                                                                      )
+                                               ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista
+:koostuuAineellisistaOsista rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :koostuuOsista ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:TransitiveProperty ,
+                                     owl:IrreflexiveProperty .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista
+:koostuuAineettomistaOsista rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :koostuuOsista ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:TransitiveProperty ,
+                                     owl:IrreflexiveProperty .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista
+:koostuuOsista rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:AsymmetricProperty ,
+                        owl:TransitiveProperty ,
+                        owl:IrreflexiveProperty .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa
+:onYhteydessa rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:SymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:comment "ilmaisee kahden kohdeen välistä spatiaalista yhteyttä"@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen
+:sisaltyyKohteeseen rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:FunctionalProperty ,
+                             owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:comment "Huom! Tämä on puhdas ad-hoc -relaatio joka tulisi korvata OGC:n SF:ää yleispäteävmmällä ontologialla joka mahdollistaa topologisten suhteiden ilmaisemisen myös muiden kuin kaksiulotteisten entiteettien osalta. Relaatio ei ole transitiivinen, koska tämän tarkoituksena on yksikäsitteisesti ilmaista, mihin yhteen ja vain yhteen kohteeseen tietty kohde kuuluu (esimerkiksi että jokainen tila kuuluu yhteen ja vain yhteen rakennukseen, sen sijaan yksi tila voi kuulua useaan eri rakennuksen osaan koska kyseiset ositukset voivat olla leikkaavia)."@fi .
+
+
+###  http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina
+:onBruttoalaaNelioina rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :onPintaAlaaNelioina ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Rakennus ;
+                      rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina
+:onHuoneistoalaaNelioina rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :onPintaAlaaNelioina ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :Huoneisto ;
+                         rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina
+:onKayttoalaaNelioina rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :onPintaAlaaNelioina ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Rakennus ;
+                      rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl
+:onKerroksiaKpl rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :onMetriikkaArvo ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Rakennus ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:onDatatype xsd:integer ;
+                             owl:withRestrictions ( [ xsd:minExclusive 0
+                                                    ]
+                                                  )
+                           ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina
+:onKerrosalaaNelioina rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :onPintaAlaaNelioina ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Rakennus ;
+                      rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina
+:onKerrostasoalaaNelioina rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :onPintaAlaaNelioina ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain :Rakennus ;
+                          rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus
+:onKiinteistotunnus rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :onYksiloivaTunniste ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Kiinteisto ;
+                    rdfs:range :kiinteistotunnus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo
+:onMetriikkaArvo rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:comment "tämän ominaisuuden aliominaisuuksia ovat kaikki jonkin metriikan mukaiset ominaisuudet (pinta-alat, tilavuudet jne.)."@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka
+:onPaloluokka rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range :paloluokka ;
+              rdfs:comment "Paloluokitus määrittyy koodiston mukaan. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)." .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina
+:onPintaAlaaNelioina rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :onMetriikkaArvo ;
+                     rdfs:domain :Maankayttokohde ;
+                     rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain
+:onPorraskirjain rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :onYksiloivaTunniste ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:range :porraskirjain .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus
+:onPysyvaHuoneistotunnus rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :onYksiloivaTunniste ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :Huoneisto ;
+                         rdfs:range :pysyvaHuoneistotunnus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus
+:onPysyvaRakennustunnus rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :onYksiloivaTunniste ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain :Rakennus ;
+                        rdfs:range :pysyvaRakennustunnus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus
+:onPysyvaTilatunnus rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :onYksiloivaTunniste ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :RakennuksenTila ;
+                    rdfs:range :pysyvaTilatunnus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila
+:onRakennuksenOsanElinkaarenTila rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                 rdf:type owl:FunctionalProperty ;
+                                 rdfs:domain :RakennuksenOsa ;
+                                 rdfs:comment "Rakennuksen osan elinkaaren tila määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan elinkaaren tilan määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila
+:onRakennuksenOsanKaytonTila rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:domain :RakennuksenOsa ;
+                             rdfs:comment "Rakennuksen osan käyttö määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan käytössäolotilanteen määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta
+:onRakennusoikeutta rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :onMetriikkaArvo ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Kaavakohde .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina
+:onRakennusoikeuttaKerrosalaNelioina rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :onPintaAlaaNelioina ,
+                                                        :onRakennusoikeutta ;
+                                     rdf:type owl:FunctionalProperty ;
+                                     rdfs:range :neliometri .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina
+:onRakennusoikeuttaKuutioina rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :onRakennusoikeutta ,
+                                                :onTilavuuttaKuutioina ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:range [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:decimal ;
+                                          owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina
+:onTilavuuttaKuutioina rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :onMetriikkaArvo ;
+                       rdf:type owl:FunctionalProperty .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste
+:onYksiloivaTunniste rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error10
+<http://org.semanticweb.owlapi/error#Error10> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error11
+<http://org.semanticweb.owlapi/error#Error11> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error12
+<http://org.semanticweb.owlapi/error#Error12> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error8
+<http://org.semanticweb.owlapi/error#Error8> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error9
+<http://org.semanticweb.owlapi/error#Error9> rdf:type owl:Class .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia
+:Alueidenkayttoasia rdf:type owl:Class ;
+                    rdfs:subClassOf :Maankayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde
+:Alueidenkayttokohde rdf:type owl:Class ;
+                     rdfs:subClassOf :Maankayttokohde ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :onPintaAlaaNelioina ;
+                                       owl:someValuesFrom :neliometri
+                                     ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi
+:Alueidenkayttoprosessi rdf:type owl:Class ;
+                        rdfs:subClassOf :Maankayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde
+:Aluerakentamiskohde rdf:type owl:Class ;
+                     rdfs:subClassOf :Rakennuskohde ;
+                     owl:disjointWith :Rakenne ,
+                                      :Rakennus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava
+:Asemakaava rdf:type owl:Class ;
+            rdfs:subClassOf :Kaava .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone
+:Asuinhuone rdf:type owl:Class ;
+            rdfs:subClassOf :Huone .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto
+:Asuinhuoneisto rdf:type owl:Class ;
+                rdfs:subClassOf :Huoneisto .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu
+:Ehdotussuunnittelu rdf:type owl:Class ;
+                    rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                      owl:someValuesFrom :SuunnittelijanToiminta
+                                    ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus
+:Energiatodistus rdf:type owl:Class ;
+                 rdfs:subClassOf :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja
+:ErityisalanTyonjohtaja rdf:type owl:Class ;
+                        rdfs:subClassOf :Tyonjohtaja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue
+:Erityisalue rdf:type owl:Class ;
+             rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue
+:ErityisharkintaAlue rdf:type owl:Class ;
+                     rdfs:subClassOf :MaankaytonRajoitus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma
+:Erityissuunnitelma rdf:type owl:Class ;
+                    rdfs:subClassOf :Rakennussuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija
+:Erityissuunnittelija rdf:type owl:Class ;
+                      rdfs:subClassOf :RakennushankkeenSuunnittelija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde
+:Esitonttikohde rdf:type owl:Class ;
+                rdfs:subClassOf :Alueidenkayttokohde .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu
+:Hankesuunnittelu rdf:type owl:Class ;
+                  rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                    owl:someValuesFrom :SuunnittelijanToiminta
+                                  ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Huone
+:Huone rdf:type owl:Class ;
+       rdfs:subClassOf :Sisatila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto
+:Huoneisto rdf:type owl:Class ;
+           rdfs:subClassOf :RakennuksenOsa ;
+           rdfs:comment "huoneistoilla voi olla itse rakennuksesta tai sen sijaintikiinteistö(i)stä eroavat omistajat"@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen
+:Hyvaksyminen rdf:type owl:Class ;
+              rdfs:subClassOf :MaankayttoprosessinOsa ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                owl:someValuesFrom :PaatoksentekijanToiminta
+                              ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaava
+:Kaava rdf:type owl:Class ;
+       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error6> ,
+                       <http://org.semanticweb.owlapi/error#Error7> ,
+                       :Kaavasuunnitelma ;
+       owl:disjointWith :Kaavatietomalli .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue
+:KaavaAlue rdf:type owl:Class ;
+           rdfs:subClassOf :Kaavakohde ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Vaikutusalue
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                             owl:hasValue 2
+                           ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia
+:KaavaAsia rdf:type owl:Class ;
+           rdfs:subClassOf :Alueidenkayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde
+:Kaavakohde rdf:type owl:Class ;
+            rdfs:subClassOf :Alueidenkayttokohde .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos
+:Kaavapaatos rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                             :Maankayttopaatos .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma
+:Kaavasuunnitelma rdf:type owl:Class ;
+                  rdfs:subClassOf :Maankayttosuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli
+:Kaavatietomalli rdf:type owl:Class ;
+                 rdfs:subClassOf :Kaavasuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti
+:Kaavatontti rdf:type owl:Class ;
+             rdfs:subClassOf :Kaavakohde ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :KaavaAlue
+                             ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja
+:Kaavoittaja rdf:type owl:Class ;
+             rdfs:subClassOf :Viranhaltija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely
+:Kaavoitusmenettely rdf:type owl:Class ;
+                    rdfs:subClassOf :Alueidenkayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kansi
+:Kansi rdf:type owl:Class ;
+       rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Katos
+:Katos rdf:type owl:Class ;
+       rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Katualue
+:Katualue rdf:type owl:Class ;
+          rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma
+:Katusuunnitelma rdf:type owl:Class ;
+                 rdfs:subClassOf :YleisenAlueenSuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen
+:Kaynnistaminen rdf:type owl:Class ;
+                rdfs:subClassOf :MaankayttoprosessinOsa ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                  owl:someValuesFrom :PaatoksentekijanToiminta
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos
+:Kaynnistamispaatos rdf:type owl:Class ;
+                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                                    :Maankayttopaatos .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kerros
+:Kerros rdf:type owl:Class ;
+        rdfs:subClassOf :RakennuksenOsa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto
+:Kiinteisto rdf:type owl:Class ;
+            rdfs:subClassOf :Alueidenkayttokohde .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija
+:KiinteistonHaltija rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja
+:KiinteistonOmistaja rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus
+:Kiinteistotoimitus rdf:type owl:Class ;
+                    rdfs:subClassOf :Alueidenkayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely
+:Kiinteistotoimitusmenettely rdf:type owl:Class ;
+                             rdfs:subClassOf :Alueidenkayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli
+:Kortteli rdf:type owl:Class ;
+          rdfs:subClassOf :Kaavakohde ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :KaavaAlue
+                          ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen
+:Kumoaminen rdf:type owl:Class ;
+            rdfs:subClassOf :MaankayttoprosessinOsa ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                              owl:someValuesFrom :PaatoksentekijanToiminta
+                            ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen
+:Kumoutuminen rdf:type owl:Class ;
+              rdfs:subClassOf :MaankayttoprosessinOsa ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                owl:someValuesFrom :Tietojarjestelma
+                              ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kunta
+:Kunta rdf:type owl:Class ;
+       rdfs:subClassOf :Oikeushenkilo .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen
+:Kuuleminen rdf:type owl:Class ;
+            rdfs:subClassOf :MaankayttoprosessinOsa ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                              owl:someValuesFrom :OsallisenToiminta
+                            ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus
+:Kuulutus rdf:type owl:Class ;
+          rdfs:subClassOf :MaankayttoprosessinOsa ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                            owl:someValuesFrom :Viranomainen
+                          ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli
+:Lamelli rdf:type owl:Class ;
+         rdfs:subClassOf :RakennuksenOsa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto
+:Lausuntopyynto rdf:type owl:Class ;
+                rdfs:subClassOf :MaankayttoprosessinOsa ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                  owl:someValuesFrom :OsallisenToiminta
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                  owl:someValuesFrom :Viranomainen
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus
+:Loppukatselmus rdf:type owl:Class ;
+                rdfs:subClassOf :Viranomaiskatselmus ;
+                owl:disjointWith :OsittainenLoppukatselmus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava
+:Luhtikaytava rdf:type owl:Class ;
+              rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo
+:LuonnollinenHenkilo rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/prov#Person> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto
+:MaakunnanLiitto rdf:type owl:Class ;
+                 rdfs:subClassOf :Oikeushenkilo .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava
+:Maakuntakaava rdf:type owl:Class ;
+               rdfs:subClassOf :Kaava .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen
+:MaankaytonRajoittaminen rdf:type owl:Class ;
+                         rdfs:subClassOf :Alueidenkayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus
+:MaankaytonRajoitus rdf:type owl:Class ;
+                    rdfs:subClassOf :Maankayttopaatos .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia
+:Maankayttoasia rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Bundle> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :onRakennuksenOsanElinkaarenTila ;
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja
+:Maankayttoasiakirja rdf:type owl:Class ;
+                     rdfs:subClassOf :Maankayttotieto ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :onYksiloivaTunniste ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus
+:Maankayttohakemus rdf:type owl:Class ;
+                   rdfs:subClassOf :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde
+:Maankayttokohde rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ,
+                                 <http://www.w3.org/ns/prov#Entity> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :onYksiloivaTunniste ;
+                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 owl:disjointWith :Maankayttotieto ,
+                                  :Rakennusosa ,
+                                  :Rakennustuote .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa
+:Maankayttolupa rdf:type owl:Class ;
+                rdfs:subClassOf :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos
+:Maankayttopaatos rdf:type owl:Class ;
+                  rdfs:subClassOf :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi
+:Maankayttoprosessi rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/prov#Plan> ;
+                    rdfs:comment "Prosessien yhteys muihin entiteetteihin tässä ontologiassa jää ohueksi, sillä ne eivät PROV-O:ssa ole samassa asemassa kuin ensisijaiset toimijat, entiteetit ja aktiviteetit. Tässä ontologiassa ei keskitytä revisioimaan itse suunnitelmia. Kts. \"PROV does not specify such a notion of ancestor. Indeed, PROV does not deﬁne derivation as a transitive relation, nor does PROV deﬁne properties for all potential ancestors: for instance, there is no property to relate an activity to the plan an agent used, or to relate an activity to the starter activity that initiated it, despite the fact that the plan and the latter activity may be seen as ancestors.\" (Moreau & Groth 2013)"@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa
+:MaankayttoprosessinOsa rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/2006/time#ProperInterval> ,
+                                        <http://www.w3.org/ns/prov#Activity> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely
+:Maankayttorajoitusmenettely rdf:type owl:Class ;
+                             rdfs:subClassOf :Alueidenkayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma
+:Maankayttosuunnitelma rdf:type owl:Class ;
+                       rdfs:subClassOf :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto
+:Maankayttotieto rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma
+:MaapoliittinenOhjelma rdf:type owl:Class ;
+                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                       :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla
+:MaaraAla rdf:type owl:Class ;
+          rdfs:subClassOf :Kiinteisto .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia
+:Maisematyoasia rdf:type owl:Class ;
+                rdfs:subClassOf :RakentamislupaAsia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa
+:Maisematyolupa rdf:type owl:Class ;
+                rdfs:subClassOf :Maankayttolupa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus
+:Maisematyolupahakemus rdf:type owl:Class ;
+                       rdfs:subClassOf :Maankayttohakemus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely
+:Maisematyolupamenettely rdf:type owl:Class ;
+                         rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen
+:NahtavilleAsettaminen rdf:type owl:Class ;
+                       rdfs:subClassOf :MaankayttoprosessinOsa ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                         owl:someValuesFrom :Viranomainen
+                                       ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo
+:Oikeushenkilo rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Organization> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen
+:Osallinen rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta
+:OsallisenToiminta rdf:type owl:Class ;
+                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error5> ,
+                                   <http://www.w3.org/ns/prov#Association> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/prov#agent> ;
+                                     owl:someValuesFrom <http://www.w3.org/ns/prov#Agent>
+                                   ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma
+:OsallistumisJaArvointisuunnitelma rdf:type owl:Class ;
+                                   rdfs:subClassOf :Maankayttosuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus
+:OsittainenLoppukatselmus rdf:type owl:Class ;
+                          rdfs:subClassOf :Viranomaiskatselmus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset
+:Paapiirustukset rdf:type owl:Class ;
+                 rdfs:subClassOf :Rakennussuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija
+:Paasuunnittelija rdf:type owl:Class ;
+                  rdfs:subClassOf :RakennushankkeenSuunnittelija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija
+:Paatoksentekija rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta
+:PaatoksentekijanToiminta rdf:type owl:Class ;
+                          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error12> ,
+                                          <http://www.w3.org/ns/prov#Association> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/ns/prov#agent> ;
+                                            owl:someValuesFrom <http://www.w3.org/ns/prov#Agent>
+                                          ] ;
+                          rdfs:comment "Tämä luokka (joka yhdistää tietyn toimijan tietyssä roolissa tiettyyn päätöksentekotapahtumaan) on luotu esimerkkinä PROV-O:n qualitied relation patternin hyödyntämisestä tietyn asian käsittelyn vaiheiden sisällön ilmaisua varten. Varsinainen hyöty tästä mallinnustavasta saavutetaan luomalla alihierarkioina eri maankäyttöasioille omat vaiheensa, ja tyypittämällä niihin kiinteästi liittyvät toimija- ja toimijaroolisuhteet. "@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja
+:PaavastuullinenToteuttaja rdf:type owl:Class ;
+                           rdfs:subClassOf :RakennushankkeenToimija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto
+:PaloOsasto rdf:type owl:Class ;
+            rdfs:subClassOf :RakennuksenOsa ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :onPaloluokka ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Parveke
+:Parveke rdf:type owl:Class ;
+         rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Pergola
+:Pergola rdf:type owl:Class ;
+         rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa
+:Poikkeamislupa rdf:type owl:Class ;
+                rdfs:subClassOf :Maankayttolupa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia
+:PoikkeamislupaAsia rdf:type owl:Class ;
+                    rdfs:subClassOf :RakentamislupaAsia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus
+:Poikkeamislupahakemus rdf:type owl:Class ;
+                       rdfs:subClassOf :Maankayttohakemus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely
+:Poikkeamislupamenettely rdf:type owl:Class ;
+                         rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue
+:Poistumisalue rdf:type owl:Class ;
+               rdfs:subClassOf :RakennuksenOsa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Porras
+:Porras rdf:type owl:Class ;
+        rdfs:subClassOf :RakennuksenOsa ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :onPorraskirjain ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone
+:Porrashuone rdf:type owl:Class ;
+             rdfs:subClassOf :Sisatila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue
+:Puistoalue rdf:type owl:Class ;
+            rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely
+:Purkamisilmoitusmenettely rdf:type owl:Class ;
+                           rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia
+:PurkamislupaAsia rdf:type owl:Class ;
+                  rdfs:subClassOf :RakentamislupaAsia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely
+:Purkamislupamenettely rdf:type owl:Class ;
+                       rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne
+:Rakenne rdf:type owl:Class ;
+         rdfs:subClassOf :Rakennuskohde ;
+         owl:disjointWith :Rakennus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa
+:RakennuksenOsa rdf:type owl:Class ;
+                rdfs:subClassOf :Maankayttokohde ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :koostuuAineettomistaOsista ;
+                                  owl:someValuesFrom :RakennuksenTila
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                                  owl:hasValue 3
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila
+:RakennuksenTila rdf:type owl:Class ;
+                 rdfs:subClassOf :Maankayttokohde ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :koostuuAineellisistaOsista ;
+                                   owl:someValuesFrom :Rakennusosa
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :onYhteydessa ;
+                                   owl:someValuesFrom :RakennuksenTila
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :sisaltyyKohteeseen ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Rakennus
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                                   owl:hasValue 3
+                                 ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus
+:Rakennus rdf:type owl:Class ;
+          rdfs:subClassOf :Rakennuskohde ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :koostuuAineettomistaOsista ;
+                            owl:someValuesFrom :RakennuksenOsa
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :koostuuAineettomistaOsista ;
+                            owl:someValuesFrom :Sisaankaynti
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :koostuuAineettomistaOsista ;
+                            owl:someValuesFrom :Sisatila
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :koostuuAineettomistaOsista ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Ulkotila
+                          ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke
+:Rakennushanke rdf:type owl:Class ;
+               rdfs:subClassOf :RakennusvalvontaAsia ;
+               owl:disjointWith :RakentamislupaAsia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija
+:RakennushankkeenSuunnittelija rdf:type owl:Class ;
+                               rdfs:subClassOf :RakennushankkeenToimija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija
+:RakennushankkeenToimija rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys
+:Rakennusjärjestys rdf:type owl:Class ;
+                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error9> ,
+                                   :Maankayttoasiakirja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto
+:Rakennuskielto rdf:type owl:Class ;
+                rdfs:subClassOf :MaankaytonRajoitus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde
+:Rakennuskohde rdf:type owl:Class ;
+               rdfs:subClassOf :Maankayttokohde ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :koostuuAineellisistaOsista ;
+                                 owl:someValuesFrom :Rakennusosa
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                                 owl:hasValue 3
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :onTilavuuttaKuutioina ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa
+:Rakennusosa rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :koostuuAineellisistaOsista ;
+                               owl:someValuesFrom :Rakennustuote
+                             ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma
+:Rakennussuunnitelma rdf:type owl:Class ;
+                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
+                                     :Maankayttosuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija
+:Rakennussuunnittelija rdf:type owl:Class ;
+                       rdfs:subClassOf :RakennushankkeenSuunnittelija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja
+:Rakennustarkastaja rdf:type owl:Class ;
+                    rdfs:subClassOf :RakennushankkeenToimija ,
+                                    :Viranhaltija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote
+:Rakennustuote rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia
+:RakennusvalvontaAsia rdf:type owl:Class ;
+                      rdfs:subClassOf :Maankayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi
+:Rakennusvalvontaprosessi rdf:type owl:Class ;
+                          rdfs:subClassOf :Maankayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste
+:Rakennusvaruste rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :koostuuAineellisistaOsista ;
+                                   owl:someValuesFrom :Rakennustuote
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :onYhteydessa ;
+                                   owl:someValuesFrom :RakennuksenTila
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :sisaltyyKohteeseen ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :RakennuksenOsa
+                                 ] ;
+                 rdfs:comment "Rakennusvarusteet ovat kalusteita, laitteita tai muita tuotteista koostettuja kokonaisuuksia jotka voivat olla yhteydessä useampaan rakennuksen tilaan (esimerkiksi yksi ja sama sammutusjärjestelmä voi olla vain osassa rakennuksen tiloista)."@fi ,
+                              "Vaikka varuste voi palvella useampaa tilaa, se muodostaa rakennuksen sisälle kuitenkin aina oman osajoukkonsa. Esimerkiksi yhteen tilaan asennettu varuste kuuluu vain kyseisen tilan sisältävään rakennuksen osajoukkoon Toisena esimerkkinä ilmanvaihtojärjestelmä muodostaa rakennuksen osajoukon johon kuuluu IV-laitteista sekä -kanavista koostuva yhtenäinen kokonaisuus. Jotkin varusteet voivat myös olla diskreeteistä osista koostuvia (eivät jatkuvia)."@fi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa
+:Rakentamislupa rdf:type owl:Class ;
+                rdfs:subClassOf :Maankayttolupa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia
+:RakentamislupaAsia rdf:type owl:Class ;
+                    rdfs:subClassOf :RakennusvalvontaAsia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus
+:Rakentamislupahakemus rdf:type owl:Class ;
+                       rdfs:subClassOf :Maankayttohakemus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely
+:Rakentamislupamenettely rdf:type owl:Class ;
+                         rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos
+:Rakentamislupapaatos rdf:type owl:Class ;
+                      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error10> ,
+                                      :Maankayttopaatos .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus
+:Rakentamisrajoitus rdf:type owl:Class ;
+                    rdfs:subClassOf :MaankaytonRajoitus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide
+:Rakentamistoimenpide rdf:type owl:Class ;
+                      rdfs:subClassOf :Rakennusvalvontaprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa
+:RakentamistoimenpiteenOsa rdf:type owl:Class ;
+                           rdfs:subClassOf :MaankayttoprosessinOsa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava
+:RantaAsemakaava rdf:type owl:Class ;
+                 rdfs:subClassOf :Asemakaava .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen
+:Raukeaminen rdf:type owl:Class ;
+             rdfs:subClassOf :MaankayttoprosessinOsa ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                               owl:someValuesFrom :Tietojarjestelma
+                             ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti
+:Rekisteritontti rdf:type owl:Class ;
+                 rdfs:subClassOf :Kiinteisto .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue
+:RekisteroityYleinenAlue rdf:type owl:Class ;
+                         rdfs:subClassOf :Kiinteisto .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Siipi
+:Siipi rdf:type owl:Class ;
+       rdfs:subClassOf :RakennuksenOsa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa
+:Sijoittamislupa rdf:type owl:Class ;
+                 rdfs:subClassOf :Maankayttolupa .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus
+:Sijoittamislupahakemus rdf:type owl:Class ;
+                        rdfs:subClassOf :Maankayttohakemus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti
+:Sisaankaynti rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :onYhteydessa ;
+                                owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                owl:onClass :RakennuksenTila
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :onPorraskirjain ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :onPorraskirjain ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila
+:Sisatila rdf:type owl:Class ;
+          rdfs:subClassOf :RakennuksenTila ;
+          owl:disjointWith :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija
+:SivuUrakoitsija rdf:type owl:Class ;
+                 rdfs:subClassOf :RakennushankkeenToimija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue
+:Suojelualue rdf:type owl:Class ;
+             rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta
+:SuunnittelijanToiminta rdf:type owl:Class ;
+                        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error11> ,
+                                        <http://www.w3.org/ns/prov#Association> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.w3.org/ns/prov#agent> ;
+                                          owl:someValuesFrom <http://www.w3.org/ns/prov#Agent>
+                                        ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli
+:Suunnittelumalli rdf:type owl:Class ;
+                  rdfs:subClassOf :Rakennussuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys
+:Tarveselvitys rdf:type owl:Class ;
+               rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                 owl:someValuesFrom :SuunnittelijanToiminta
+                               ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Terassi
+:Terassi rdf:type owl:Class ;
+         rdfs:subClassOf :Ulkotila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma
+:Tietojarjestelma rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus
+:Toimenpiderajoitus rdf:type owl:Class ;
+                    rdfs:subClassOf :MaankaytonRajoitus .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tontti
+:Tontti rdf:type owl:Class ;
+        rdfs:subClassOf :Kiinteisto .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia
+:Tonttijakoasia rdf:type owl:Class ;
+                rdfs:subClassOf :Alueidenkayttoasia .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely
+:Tonttijakomenettely rdf:type owl:Class ;
+                     rdfs:subClassOf :Alueidenkayttoprosessi .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Torialue
+:Torialue rdf:type owl:Class ;
+          rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu
+:Toteutussuunnittelu rdf:type owl:Class ;
+                     rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                       owl:someValuesFrom :SuunnittelijanToiminta
+                                     ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin
+:Tuomioistuin rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Organization> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja
+:Tyonjohtaja rdf:type owl:Class ;
+             rdfs:subClassOf :RakennushankkeenToimija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila
+:Ulkotila rdf:type owl:Class ;
+          rdfs:subClassOf :RakennuksenTila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue
+:VaaraAlue rdf:type owl:Class ;
+           rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja
+:Vaestonsuoja rdf:type owl:Class ;
+              rdfs:subClassOf :Sisatila .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue
+:Vaikutusalue rdf:type owl:Class ;
+              rdfs:subClassOf :Alueidenkayttokohde ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.opengis.net/ont/geosparql#dimension> ;
+                                owl:hasValue 2
+                              ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko
+:ValituksenTeko rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error8> ,
+                                :MaankayttoprosessinOsa ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                  owl:someValuesFrom :OsallisenToiminta
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                  owl:someValuesFrom :Viranomainen
+                                ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja
+:Valvoja rdf:type owl:Class ;
+         rdfs:subClassOf :RakennushankkeenToimija .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja
+:VastaavaTyonjohtaja rdf:type owl:Class ;
+                     rdfs:subClassOf :Tyonjohtaja .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue
+:Vesialue rdf:type owl:Class ;
+          rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija
+:Viranhaltija rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Role> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen
+:Viranomainen rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Organization> .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus
+:Viranomaiskatselmus rdf:type owl:Class ;
+                     rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                       owl:someValuesFrom :Viranomainen
+                                     ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo
+:Vireilletulo rdf:type owl:Class ;
+              rdfs:subClassOf :MaankayttoprosessinOsa ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                owl:someValuesFrom :Tietojarjestelma
+                              ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue
+:VirkistysJaMatkailualue rdf:type owl:Class ;
+                         rdfs:subClassOf :YleinenAlue .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo
+:Voimaantulo rdf:type owl:Class ;
+             rdfs:subClassOf :MaankayttoprosessinOsa ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                               owl:someValuesFrom :Tietojarjestelma
+                             ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys
+:Yhdistys rdf:type owl:Class ;
+          rdfs:subClassOf :Oikeushenkilo .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue
+:YleinenAlue rdf:type owl:Class ;
+             rdfs:subClassOf :Kaavakohde ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :KaavaAlue
+                             ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma
+:YleisenAlueenSuunnitelma rdf:type owl:Class ;
+                          rdfs:subClassOf :Maankayttosuunnitelma .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava
+:Yleiskaava rdf:type owl:Class ;
+            rdfs:subClassOf :Kaava .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu
+:Yleissuunnittelu rdf:type owl:Class ;
+                  rdfs:subClassOf :RakentamistoimenpiteenOsa ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                                    owl:someValuesFrom :SuunnittelijanToiminta
+                                  ] .
+
+
+###  http://uri.suomi.fi/datamodel/ns/ryyo#Yritys
+:Yritys rdf:type owl:Class ;
+        rdfs:subClassOf :Oikeushenkilo .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Association
+<http://www.w3.org/ns/prov#Association> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Bundle
+<http://www.w3.org/ns/prov#Bundle> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Plan
+<http://www.w3.org/ns/prov#Plan> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Role
+<http://www.w3.org/ns/prov#Role> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class .
+
+
+_:genid85 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" ;
+          <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid86 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+_:genid87 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" ;
+           <http://ainf.aau.at/ontodebug#type> "true"^^xsd:boolean .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minCardinality "0"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ xsd:minInclusive 0
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ xsd:pattern "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*"
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Alueidenkayttokohde
+                 :Huoneisto
+                 :RakennuksenOsa
+                 :RakennuksenTila
+                 :Rakennuskohde
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aluerakentamiskohde
+                :Rakenne
+                :Rakennus
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Asemakaava
+                :Maakuntakaava
+                :Yleiskaava
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Energiatodistus
+                :Maankayttohakemus
+                :Maankayttolupa
+                :MaapoliittinenOhjelma
+                :Rakennusjärjestys
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Erityisalue
+                :Katualue
+                :Puistoalue
+                :Suojelualue
+                :Torialue
+                :VaaraAlue
+                :Vesialue
+                :VirkistysJaMatkailualue
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ErityisharkintaAlue
+                :Rakennuskielto
+                :Rakentamisrajoitus
+                :Toimenpiderajoitus
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Erityissuunnitelma
+                :Paapiirustukset
+                :Suunnittelumalli
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Esitonttikohde
+                :Kaavakohde
+                :Kiinteisto
+                :MaaraAla
+                :Vaikutusalue
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Hyvaksyminen
+                :Kaynnistaminen
+                :Kumoaminen
+                :Kumoutuminen
+                :Kuuleminen
+                :Kuulutus
+                :Lausuntopyynto
+                :NahtavilleAsettaminen
+                :RakentamistoimenpiteenOsa
+                :Raukeaminen
+                :Vireilletulo
+                :Voimaantulo
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :KaavaAlue
+                :Kaavatontti
+                :Kortteli
+                :YleinenAlue
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :KaavaAsia
+                :Kiinteistotoimitus
+                :MaankaytonRajoittaminen
+                :Tonttijakoasia
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Kaavapaatos
+                :Kaynnistamispaatos
+                :MaankaytonRajoitus
+                :Rakentamislupapaatos
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Kaavasuunnitelma
+                :OsallistumisJaArvointisuunnitelma
+                :Rakennussuunnitelma
+                :YleisenAlueenSuunnitelma
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Kansi
+                :Katos
+                :Luhtikaytava
+                :Parveke
+                :Pergola
+                :Terassi
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Maankayttokohde
+                :Maankayttoprosessi
+                :MaankayttoprosessinOsa
+                :Maankayttotieto
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Maisematyoasia
+                :PoikkeamislupaAsia
+                :PurkamislupaAsia
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Maisematyolupa
+                :Poikkeamislupa
+                :Rakentamislupa
+                :Sijoittamislupa
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Maisematyolupahakemus
+                :Poikkeamislupahakemus
+                :Rakentamislupahakemus
+                :Sijoittamislupahakemus
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Rekisteritontti
+                :RekisteroityYleinenAlue
+                :Tontti
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

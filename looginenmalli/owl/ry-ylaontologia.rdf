@@ -1,0 +1,4251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://uri.suomi.fi/datamodel/ns/ryyo#"
+	xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:gml="http://www.opengis.net/ont/gml#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rytj="http://uri.suomi.fi/terminology/rytj/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sys="http://www.ontotext.com/owlim/system#"
+	xmlns:sf="http://www.opengis.net/ont/sf#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:ontodebug="http://ainf.aau.at/ontodebug#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:luc="http://www.ontotext.com/owlim/lucene#"
+	xmlns:time="http://www.w3.org/2006/time#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1477">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1478">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1479">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1480">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1481">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1482">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1483">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1484">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1485">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1486">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1487">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Huone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1488">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1489">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1490">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1491">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1492">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kansi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katualue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1493">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kerros">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1494">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1495">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1496">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1497">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Parveke">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Pergola">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1498">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Siipi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Terassi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tontti">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Torialue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1499">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1500">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1501">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1502">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1503">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1504">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1505">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1506">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1507">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1508">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1509">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1510">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1511">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1512">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1513">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1514">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1515">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1516">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1517">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1518">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1519">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1520">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1521">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1522">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1524">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1525">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1526">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1527">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1528">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1529">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1530">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1531">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1532">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1533">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1534">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1535">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1536">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kunta">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1537">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1538">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1539">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1540">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1541">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1542">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1543">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1544">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1545">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1546">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1547">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1548">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1549">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1550">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1551">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1552">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1553">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yritys">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1554">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1555">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1556">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1557">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1558">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1559">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1560">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1561">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1562">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1563">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1564">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1565">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1566">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1567">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1568">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1569">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1570">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1571">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1572">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1573">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1574">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1575">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1576">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1933">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1936">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1939">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1944">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1967">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1973">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1976">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1981">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1998">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2001">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2014">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2017">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2033">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2041">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2044">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2047">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2050">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2053">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-restriction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-facetsList">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Porras">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2112">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2115">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2118">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2145">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2150">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina"/>
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain">
+	<rdfs:subPropertyOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1933"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1936"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1939"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2014"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1482"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1944"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2044"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde">
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1524"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1535"/>
+	<rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2041"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1973"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1998"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2047"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2145"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1976"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2050"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia">
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1536"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1487"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1538"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1541"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Huone"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Huone">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1571"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1532"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1489"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1491"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2053"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1537"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1572"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1551"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2033"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1542"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1492"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kansi">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katos">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katualue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1558"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1543"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kerros">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1496"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1550"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1555"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1549"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1568"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1552"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1567"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1553"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1539"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1566"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1497"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Parveke">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Pergola">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1540"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1576"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1554"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Siipi">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1573"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Terassi">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tontti">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Torialue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1574"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1561"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1562"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1575"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kunta">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija"/>
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yritys">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta">
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1556"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1557"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Association"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1563"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1564"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1565"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta">
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1569"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1570"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Association"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta">
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1559"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1560"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Association"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1967"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx1981"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2001"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2150"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2017"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2115"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2118"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Porras">
+	<rdfs:subClassOf rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+	<rdfs:subClassOf rdf:nodeID="node1flh0irbbx2112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila">
+	<rdfs:domain rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl">
+	<rdfs:range rdf:nodeID="node1flh0irbbx1485"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina">
+	<rdfs:range rdf:nodeID="node1flh0irbbx1486"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain">
+	<rdfs:range rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1533"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1477"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1499"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1526"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1528"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus">
+	<owl:equivalentClass rdf:nodeID="node1flh0irbbx1530"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain">
+	<owl:equivalentClass rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1500">
+	<rdf:first rdf:nodeID="node1flh0irbbx1583"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1522">
+	<rdf:first rdf:nodeID="node1flh0irbbx1674"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1527">
+	<rdf:first rdf:nodeID="node1flh0irbbx1675"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1529">
+	<rdf:first rdf:nodeID="node1flh0irbbx1676"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1531">
+	<rdf:first rdf:nodeID="node1flh0irbbx1677"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1534">
+	<rdf:first rdf:nodeID="node1flh0irbbx1678"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1545">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1546">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1547">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1548">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1577">
+	<rdf:first rdf:nodeID="node1flh0irbbx1578"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1579">
+	<rdf:first rdf:nodeID="node1flh0irbbx1580"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1581">
+	<rdf:first rdf:nodeID="node1flh0irbbx1582"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1584">
+	<rdf:first rdf:nodeID="node1flh0irbbx1585"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1586">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1587">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1588">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1589">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1590">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1591">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1592">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1593">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1594">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1595">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1596">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1597">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1598">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1599">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1600">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1601">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1602">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1603">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Katualue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1604">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1605">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1606">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Torialue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1607">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1608">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1609">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1610">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1611">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1612">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1613">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1614">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1615">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1616">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1617">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1618">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1619">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1620">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1621">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1622">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1623">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1624">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1625">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1626">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1627">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1628">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1629">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1630">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1631">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1632">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1633">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1634">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1635">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1636">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1637">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1638">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1639">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1640">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1641">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1642">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1643">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1644">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1645">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1646">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1647">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1648">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1649">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1650">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kansi"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1651">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Katos"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1652">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1653">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Parveke"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1654">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Pergola"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1655">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Terassi"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1656">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1657">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1658">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1659">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1660">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1661">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1662">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1663">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1664">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1665">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1666">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1667">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1668">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1669">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1670">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1671">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1672">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1673">
+	<rdf:first rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tontti"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-facetsList">
+	<rdf:first rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-first0"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1500">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1522">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1527">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1529">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1531">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1534">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1545">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1546"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1546">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1547"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1547">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1548"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1548">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1577">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1579">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1581">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1584">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1586">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1587"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1587">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1588"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1588">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1589"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1589">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1590"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1590">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1591">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1592"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1592">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1593"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1593">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1594">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1595"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1595">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1596"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1596">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1597">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1598"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1598">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1599"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1599">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1600"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1600">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1601"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1601">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1602">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1603"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1603">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1604"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1604">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1605"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1605">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1606"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1606">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1607"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1607">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1608"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1608">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1609"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1609">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1610">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1611"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1611">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1612"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1612">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1613"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1613">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1614">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1615"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1615">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1616"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1616">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1617">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1618"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1618">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1619"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1619">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1620"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1620">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1621"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1621">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1622">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1623"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1623">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1624"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1624">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1625"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1625">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1626"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1626">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1627"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1627">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1628"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1628">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1629"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1629">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1630"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1630">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1631"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1631">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1632"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1632">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1633"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1633">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1634">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1635"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1635">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1636"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1636">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1637"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1637">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1638">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1639"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1639">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1640"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1640">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1641"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1641">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1642">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1643"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1643">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1644"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1644">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1645"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1645">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1646">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1647"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1647">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1648"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1648">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1649"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1649">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1650">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1651"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1651">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1652"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1652">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1653"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1653">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1654"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1654">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1655"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1655">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1656">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1657"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1657">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1658"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1658">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1659"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1659">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1679"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1660">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1661"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1661">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1662"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1662">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1663">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1664"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1664">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1665"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1665">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1666"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1666">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1667">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1668"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1668">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1669"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1669">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1670"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1670">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1671">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1672"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1672">
+	<rdf:rest rdf:nodeID="node1flh0irbbx1673"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1673">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1679">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-facetsList">
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo">
+	<rdfs:comment xml:lang="fi">Ontologiaan ei ole vielä ydistetty suoraan SKOS-muotoista RYTJ-sanastoa kuvaamaan luokkia vastaavia käsitteitä; käsitevastaavuudet voi tarkistaa Y-alustalta (http://uri.suomi.fi/terminology/rytj/). Rakenteen vastaavuus prosesseja, niiden osia ym. kuvaavien käsitteiden osalta ei ole identtinen johtuen käytetyn PROV-O-ontologian ylärakenteiden noudattamisesta.</rdfs:comment>
+	<rdfs:comment xml:lang="fi">Ontologian tuottamisessa on selvitetty W3C:n Time-ontologian käyttöä ajallisten entiteettien kuvailuun, OGC:n GeoSPARQL-ontologian käyttöä spatiaalisten entiteettien kuvailuun, W3C:n PROV-O-ontologian käyttöä subjektien, toiminnan ja toiminnan kohteiden välisen tapahtuma- ja muutoshistorian kuvailuun, sekä IFCOWL-ontologian käyttöä rakennustietovarannon entiteettien määrittämiseen. Näistä GeoSPARQL, PROV-O ja Time ovat alustavasti ehdotusluonteisesti käytössä maankäyttökohteille sekä prosesseille. GeoSPARQL:stä käytössä on vakaa 1.0-versio, sillä 1.1 on epävakaa ja edelleen aktiivisesti työn alla. Tämä kuitenkin tarkoittaa sitä, että tämä malli ei pääse hyötymään lukuisista 1.1:een tehdyistä parannuksista ja korjauksista.</rdfs:comment>
+	<rdfs:comment xml:lang="fi">Ontologia on tuotettu RYTJ:n käsite- ja loogisen tietomallin tuottamisen ohessa, ja se on tämän version kuvaamassa muodossa karkea luonnos RYTJ:n hallinnoimien rakennetun ympäristön tietojen formaalista semanttisesta rakenteesta OWL-ontologiana. Tätä mallia tulkitessa tulee huomioida, että ontologia on tuotettu hyvin nopealla aikataululla laajasta lähtöaineistosta ja sitä ei ole validoitu tuotantokäyttöön.</rdfs:comment>
+	<rdfs:comment xml:lang="fi">Ontologian dokumentaatio on generoity pyLODElla ontdoc-profiilia. Valitettavasti kyseinen profiili ei oletuksena kuvaa kompleksisempia ominaisuusrajoitteita (esim. xsd:pattern) eikä esitä datatyyppejä. Profiilista ehdittiin projektin aikana tehdä minimaalisesti päivitetty versio joka ei kuitenkaan vielä kata näitä puutteita.</rdfs:comment>
+	<rdfs:comment xml:lang="fi">Tämän ontologian tulkitsemiseen suositellaan seuraavia helppolukuisia teoksia: 1) Moreau, L., &amp; Groth, P. (2013). Provenance: An introduction to PROV. Morgan &amp; Claypool. https://doi.org/10.2200/S00528ED1V01Y201308WBE007 2) Uschold, M. (2018). Demystifying OWL for the Enterprise. Synthesis Lectures on the Semantic Web: Theory and Technology, 8(1), i–237. https://doi.org/10.2200/S00824ED1V01Y201801WBE017 3) Lappalainen, M. (2014). Yläontologiat ja yleisen suomalaisen ontologian ylärakenne: ONKI-projektin toteuttamat muutokset. Kansalliskirjasto. http://urn.fi/URN:ISBN:978-951-51-0347-5</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri">
+	<rdfs:comment xml:lang="fi">tilapäinen datatyyppi kuutiometrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri">
+	<rdfs:comment xml:lang="fi">tilapäinen datatyyppi neliömetrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi">
+	<rdfs:comment xml:lang="fi">Prosessien yhteys muihin entiteetteihin tässä ontologiassa jää ohueksi, sillä ne eivät PROV-O:ssa ole samassa asemassa kuin ensisijaiset toimijat, entiteetit ja aktiviteetit. Tässä ontologiassa ei keskitytä revisioimaan itse suunnitelmia. Kts. "PROV does not specify such a notion of ancestor. Indeed, PROV does not deﬁne derivation as a transitive relation, nor does PROV deﬁne properties for all potential ancestors: for instance, there is no property to relate an activity to the plan an agent used, or to relate an activity to the starter activity that initiated it, despite the fact that the plan and the latter activity may be seen as ancestors." (Moreau &amp; Groth 2013)</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo">
+	<rdfs:comment xml:lang="fi">tämän ominaisuuden aliominaisuuksia ovat kaikki jonkin metriikan mukaiset ominaisuudet (pinta-alat, tilavuudet jne.).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto">
+	<rdfs:comment xml:lang="fi">huoneistoilla voi olla itse rakennuksesta tai sen sijaintikiinteistö(i)stä eroavat omistajat</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka">
+	<rdfs:comment>Paloluokitus määrittyy koodiston mukaan. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka">
+	<rdfs:comment xml:lang="fi">tietotyyppi paloluokituksen koodiston enumeraatioille</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila">
+	<rdfs:comment xml:lang="fi">tietotyyppi rakennuksen elinkaaren koodiston enumeraatioille</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta">
+	<rdfs:comment xml:lang="fi">Tämä luokka (joka yhdistää tietyn toimijan tietyssä roolissa tiettyyn päätöksentekotapahtumaan) on luotu esimerkkinä PROV-O:n qualitied relation patternin hyödyntämisestä tietyn asian käsittelyn vaiheiden sisällön ilmaisua varten. Varsinainen hyöty tästä mallinnustavasta saavutetaan luomalla alihierarkioina eri maankäyttöasioille omat vaiheensa, ja tyypittämällä niihin kiinteästi liittyvät toimija- ja toimijaroolisuhteet. </rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste">
+	<rdfs:comment xml:lang="fi">Rakennusvarusteet ovat kalusteita, laitteita tai muita tuotteista koostettuja kokonaisuuksia jotka voivat olla yhteydessä useampaan rakennuksen tilaan (esimerkiksi yksi ja sama sammutusjärjestelmä voi olla vain osassa rakennuksen tiloista).</rdfs:comment>
+	<rdfs:comment xml:lang="fi">Vaikka varuste voi palvella useampaa tilaa, se muodostaa rakennuksen sisälle kuitenkin aina oman osajoukkonsa. Esimerkiksi yhteen tilaan asennettu varuste kuuluu vain kyseisen tilan sisältävään rakennuksen osajoukkoon Toisena esimerkkinä ilmanvaihtojärjestelmä muodostaa rakennuksen osajoukon johon kuuluu IV-laitteista sekä -kanavista koostuva yhtenäinen kokonaisuus. Jotkin varusteet voivat myös olla diskreeteistä osista koostuvia (eivät jatkuvia).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa">
+	<rdfs:comment xml:lang="fi">ilmaisee kahden kohdeen välistä spatiaalista yhteyttä</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila">
+	<rdfs:comment xml:lang="fi">Rakennuksen osan käyttö määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan käytössäolotilanteen määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila">
+	<rdfs:comment xml:lang="fi">Rakennuksen osan elinkaaren tila määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan elinkaaren tilan määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen">
+	<rdfs:comment xml:lang="fi">Huom! Tämä on puhdas ad-hoc -relaatio joka tulisi korvata OGC:n SF:ää yleispäteävmmällä ontologialla joka mahdollistaa topologisten suhteiden ilmaisemisen myös muiden kuin kaksiulotteisten entiteettien osalta. Relaatio ei ole transitiivinen, koska tämän tarkoituksena on yksikäsitteisesti ilmaista, mihin yhteen ja vain yhteen kohteeseen tietty kohde kuuluu (esimerkiksi että jokainen tila kuuluu yhteen ja vain yhteen rakennukseen, sen sijaan yksi tila voi kuulua useaan eri rakennuksen osaan koska kyseiset ositukset voivat olla leikkaavia).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo">
+	<owl:versionIRI rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo/0.1"/>
+	<owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+	<owl:imports rdf:resource="http://www.opengis.net/ont/sf"/>
+	<owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+	<owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
+	<owl:versionInfo xml:lang="fi">synkronointi RYTJ-käsitemallin kanssa tehty viimeksi 26.11.2021</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1482">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1483">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1494">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1497">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1532">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1535">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1536">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2112">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"/>
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"/>
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Kaava">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke">
+	<owl:disjointWith rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2033">
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2044">
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2047">
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2050">
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2053">
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2118">
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1502">
+	<owl:members rdf:nodeID="node1flh0irbbx1586"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1503">
+	<owl:members rdf:nodeID="node1flh0irbbx1591"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1504">
+	<owl:members rdf:nodeID="node1flh0irbbx1594"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1505">
+	<owl:members rdf:nodeID="node1flh0irbbx1597"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1506">
+	<owl:members rdf:nodeID="node1flh0irbbx1602"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1507">
+	<owl:members rdf:nodeID="node1flh0irbbx1610"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1508">
+	<owl:members rdf:nodeID="node1flh0irbbx1614"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1509">
+	<owl:members rdf:nodeID="node1flh0irbbx1617"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1510">
+	<owl:members rdf:nodeID="node1flh0irbbx1622"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1511">
+	<owl:members rdf:nodeID="node1flh0irbbx1634"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1512">
+	<owl:members rdf:nodeID="node1flh0irbbx1638"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1513">
+	<owl:members rdf:nodeID="node1flh0irbbx1642"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1514">
+	<owl:members rdf:nodeID="node1flh0irbbx1646"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1515">
+	<owl:members rdf:nodeID="node1flh0irbbx1650"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1516">
+	<owl:members rdf:nodeID="node1flh0irbbx1656"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1517">
+	<owl:members rdf:nodeID="node1flh0irbbx1660"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1518">
+	<owl:members rdf:nodeID="node1flh0irbbx1663"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1519">
+	<owl:members rdf:nodeID="node1flh0irbbx1667"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1520">
+	<owl:members rdf:nodeID="node1flh0irbbx1671"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1488">
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1524">
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2041">
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2115">
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1478">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1479">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1480">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1481">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1484">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1495">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1939">
+	<owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1478">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1479">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1484">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1489">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1491">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1492">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1496">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1498">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1525">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1537">
+	<owl:onClass rdf:nodeID="node1flh0irbbx1544"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1538">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1539">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1540">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1541">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1542">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1543">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1557">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1559">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1564">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1569">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1576">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1939">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2017">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2145">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2150">
+	<owl:onClass rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1477">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1485">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1486">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1499">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1501">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1521">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1526">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1528">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1530">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1533">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-restriction">
+	<owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1482">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1487">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1489">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1491">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1492">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1496">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1497">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1524">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasSerialization"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1532">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1535">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1536">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1537">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1538">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1539">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1540">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1541">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1542">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1543">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1549">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1550">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1551">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1552">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1553">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1554">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1555">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1556">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1557">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1558">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1559">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1560">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1561">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1562">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1563">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1564">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1565">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1566">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1567">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1568">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1569">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1570">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1571">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1572">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1573">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1574">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1575">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1576">
+	<owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1933">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1936">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1939">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1944">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1967">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1973">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1976">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1981">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1998">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2001">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2014">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2017">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2033">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2041">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2044">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2047">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2050">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2053">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2112">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2115">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2118">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2145">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2150">
+	<owl:onProperty rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1489">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1491">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1492">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1496">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1498">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1525">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1537">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1538">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1539">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1540">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1541">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1542">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1543">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1557">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1559">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1564">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1569">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1576">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2017">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2145">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2150">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1487">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1490">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1493">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1549">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1550">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1551">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1552">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1553">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1554">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1555">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1556">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1558">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1560">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1561">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1562">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1563">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1565">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1566">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1567">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1568">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1570">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1571">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1572">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1573">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1574">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1575">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1933">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1936">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1944">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1967">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1973">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1976">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1981">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1998">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2001">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx2014">
+	<owl:someValuesFrom rdf:resource="http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1544">
+	<owl:unionOf rdf:nodeID="node1flh0irbbx1545"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1477">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1577"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1485">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1579"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1486">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1581"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1499">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1500"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1501">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1584"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1521">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1522"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1526">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1527"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1528">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1529"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1530">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1531"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1533">
+	<owl:withRestrictions rdf:nodeID="node1flh0irbbx1534"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-restriction">
+	<owl:withRestrictions rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-facetsList"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo">
+	<skos:prefLabel xml:lang="fi">RYTJ:n Rakennetun Ympäristön YläOntologia (RYYO)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1578">
+	<xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1582">
+	<xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1674">
+	<xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1678">
+	<xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1580">
+	<xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1583">
+	<xsd:pattern>http://uri\.suomi\.fi/codelist/rytj/Paloluokka/.*</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1585">
+	<xsd:pattern>http://uri\.suomi\.fi/codelist/rytj/Paloluokka/.*</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1675">
+	<xsd:pattern>http://uri\.suomi\.fi/codelist/rakrek/rakelinvaih.*</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1676">
+	<xsd:pattern>1[0-9]{8}[A-ZÖÅÄ]</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1677">
+	<xsd:pattern>[0-9]{14}</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-b475872db3ae439db25b4d38a863e2be-first0">
+	<xsd:pattern>[0-9]+[A-ZÖÅÄ]+[a-zöåä]+</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1680">
+	<ontodebug:axiom>Kiinteisto DisjointWith RakennuksenTila</ontodebug:axiom>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1681">
+	<ontodebug:axiom>Kiinteisto DisjointWith RakennuksenTila</ontodebug:axiom>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1682">
+	<ontodebug:axiom>Kiinteisto DisjointWith RakennuksenTila</ontodebug:axiom>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1680">
+	<ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1681">
+	<ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1flh0irbbx1682">
+	<ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://uri.suomi.fi/datamodel/ns/ryyo">
+	<dc:creator xml:lang="fi">Otso Helenius</dc:creator>
+	<dc:contributor xml:lang="fi">Marko Kauppi</dc:contributor>
+	<dc:contributor xml:lang="fi">Riikka Huttunen</dc:contributor>
+	<dc:contributor xml:lang="fi">Johanna Jalas</dc:contributor>
+</rdf:Description>
+
+</rdf:RDF>

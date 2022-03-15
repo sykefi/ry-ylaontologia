@@ -1,0 +1,1730 @@
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#versionIRI> <http://uri.suomi.fi/datamodel/ns/ryyo/0.1> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/sf> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://purl.org/dc/elements/1.1/contributor> "Johanna Jalas"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://purl.org/dc/elements/1.1/contributor> "Marko Kauppi"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://purl.org/dc/elements/1.1/contributor> "Riikka Huttunen"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://purl.org/dc/elements/1.1/creator> "Otso Helenius"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia on tuotettu RYTJ:n käsite- ja loogisen tietomallin tuottamisen ohessa, ja se on tämän version kuvaamassa muodossa karkea luonnos RYTJ:n hallinnoimien rakennetun ympäristön tietojen formaalista semanttisesta rakenteesta OWL-ontologiana. Tätä mallia tulkitessa tulee huomioida, että ontologia on tuotettu hyvin nopealla aikataululla laajasta lähtöaineistosta ja sitä ei ole validoitu tuotantokäyttöön."@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologiaan ei ole vielä ydistetty suoraan SKOS-muotoista RYTJ-sanastoa kuvaamaan luokkia vastaavia käsitteitä; käsitevastaavuudet voi tarkistaa Y-alustalta (http://uri.suomi.fi/terminology/rytj/). Rakenteen vastaavuus prosesseja, niiden osia ym. kuvaavien käsitteiden osalta ei ole identtinen johtuen käytetyn PROV-O-ontologian ylärakenteiden noudattamisesta."@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologian dokumentaatio on generoity pyLODElla ontdoc-profiilia. Valitettavasti kyseinen profiili ei oletuksena kuvaa kompleksisempia ominaisuusrajoitteita (esim. xsd:pattern) eikä esitä datatyyppejä. Profiilista ehdittiin projektin aikana tehdä minimaalisesti päivitetty versio joka ei kuitenkaan vielä kata näitä puutteita."@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologian tuottamisessa on selvitetty W3C:n Time-ontologian käyttöä ajallisten entiteettien kuvailuun, OGC:n GeoSPARQL-ontologian käyttöä spatiaalisten entiteettien kuvailuun, W3C:n PROV-O-ontologian käyttöä subjektien, toiminnan ja toiminnan kohteiden välisen tapahtuma- ja muutoshistorian kuvailuun, sekä IFCOWL-ontologian käyttöä rakennustietovarannon entiteettien määrittämiseen. Näistä GeoSPARQL, PROV-O ja Time ovat alustavasti ehdotusluonteisesti käytössä maankäyttökohteille sekä prosesseille. GeoSPARQL:stä käytössä on vakaa 1.0-versio, sillä 1.1 on epävakaa ja edelleen aktiivisesti työn alla. Tämä kuitenkin tarkoittaa sitä, että tämä malli ei pääse hyötymään lukuisista 1.1:een tehdyistä parannuksista ja korjauksista."@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2000/01/rdf-schema#comment> "Tämän ontologian tulkitsemiseen suositellaan seuraavia helppolukuisia teoksia: 1) Moreau, L., & Groth, P. (2013). Provenance: An introduction to PROV. Morgan & Claypool. https://doi.org/10.2200/S00528ED1V01Y201308WBE007 2) Uschold, M. (2018). Demystifying OWL for the Enterprise. Synthesis Lectures on the Semantic Web: Theory and Technology, 8(1), i–237. https://doi.org/10.2200/S00824ED1V01Y201801WBE017 3) Lappalainen, M. (2014). Yläontologiat ja yleisen suomalaisen ontologian ylärakenne: ONKI-projektin toteuttamat muutokset. Kansalliskirjasto. http://urn.fi/URN:ISBN:978-951-51-0347-5"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2002/07/owl#versionInfo> "synkronointi RYTJ-käsitemallin kanssa tehty viimeksi 26.11.2021"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo> <http://www.w3.org/2004/02/skos/core#prefLabel> "RYTJ:n Rakennetun Ympäristön YläOntologia (RYYO)"@fi .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://ainf.aau.at/ontodebug#axiom
+<http://ainf.aau.at/ontodebug#axiom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://ainf.aau.at/ontodebug#type
+<http://ainf.aau.at/ontodebug#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#minInclusive
+<http://www.w3.org/2001/XMLSchema#minInclusive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#cardinality
+<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minCardinality
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minQualifiedCardinality
+<http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#pattern> "[0-9]{14}" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri
+<http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri> <http://www.w3.org/2000/01/rdf-schema#comment> "tilapäinen datatyyppi kuutiometrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#neliometri
+<http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> <http://www.w3.org/2000/01/rdf-schema#comment> "tilapäinen datatyyppi neliömetrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid7 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka
+<http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka> <http://www.w3.org/2000/01/rdf-schema#comment> "tietotyyppi paloluokituksen koodiston enumeraatioille"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid10 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2001/XMLSchema#pattern> "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain
+<http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid13 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid13 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2001/XMLSchema#pattern> "[0-9]+[A-ZÖÅÄ]+[a-zöåä]+" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid16 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2001/XMLSchema#pattern> "1[0-9]{8}[A-ZÖÅÄ]" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila
+<http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila> <http://www.w3.org/2000/01/rdf-schema#comment> "tietotyyppi rakennuksen elinkaaren koodiston enumeraatioille"@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#pattern> "http://uri\\.suomi\\.fi/codelist/rakrek/rakelinvaih.*" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> <http://www.w3.org/2000/01/rdf-schema#comment> "ilmaisee kahden kohdeen välistä spatiaalista yhteyttä"@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> <http://www.w3.org/2000/01/rdf-schema#comment> "Huom! Tämä on puhdas ad-hoc -relaatio joka tulisi korvata OGC:n SF:ää yleispäteävmmällä ontologialla joka mahdollistaa topologisten suhteiden ilmaisemisen myös muiden kuin kaksiulotteisten entiteettien osalta. Relaatio ei ole transitiivinen, koska tämän tarkoituksena on yksikäsitteisesti ilmaista, mihin yhteen ja vain yhteen kohteeseen tietty kohde kuuluu (esimerkiksi että jokainen tila kuuluu yhteen ja vain yhteen rakennukseen, sen sijaan yksi tila voi kuulua useaan eri rakennuksen osaan koska kyseiset ositukset voivat olla leikkaavia)."@fi .
+# 
+# http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo
+<http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> <http://www.w3.org/2000/01/rdf-schema#comment> "tämän ominaisuuden aliominaisuuksia ovat kaikki jonkin metriikan mukaiset ominaisuudet (pinta-alat, tilavuudet jne.)."@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> <http://www.w3.org/2000/01/rdf-schema#comment> "Paloluokitus määrittyy koodiston mukaan. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)." .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> <http://www.w3.org/2000/01/rdf-schema#comment> "Rakennuksen osan elinkaaren tila määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan elinkaaren tilan määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila> <http://www.w3.org/2000/01/rdf-schema#comment> "Rakennuksen osan käyttö määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan käytössäolotilanteen määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina> <http://www.w3.org/2000/01/rdf-schema#range> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid25 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid25 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina
+<http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error10
+<http://org.semanticweb.owlapi/error#Error10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error11
+<http://org.semanticweb.owlapi/error#Error11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error12
+<http://org.semanticweb.owlapi/error#Error12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error8
+<http://org.semanticweb.owlapi/error#Error8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error9
+<http://org.semanticweb.owlapi/error#Error9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#neliometri> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Huone> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu
+<http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue
+<http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Huone
+<http://uri.suomi.fi/datamodel/ns/ryyo#Huone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Huone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> <http://www.w3.org/2000/01/rdf-schema#comment> "huoneistoilla voi olla itse rakennuksesta tai sen sijaintikiinteistö(i)stä eroavat omistajat"@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaava
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error6> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error7> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfWithin> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfWithin> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kansi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kansi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kansi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Katos
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Katualue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katualue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katualue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kerros
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kerros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kerros> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija
+<http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+<http://www.w3.org/ns/prov#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfWithin> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kunta
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kunta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava
+<http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo
+<http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Bundle> .
+<http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila> .
+_:genid43 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+_:genid44 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid45 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasSerialization> .
+_:genid46 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste> .
+_:genid47 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Plan> .
+<http://www.w3.org/ns/prov#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> <http://www.w3.org/2000/01/rdf-schema#comment> "Prosessien yhteys muihin entiteetteihin tässä ontologiassa jää ohueksi, sillä ne eivät PROV-O:ssa ole samassa asemassa kuin ensisijaiset toimijat, entiteetit ja aktiviteetit. Tässä ontologiassa ei keskitytä revisioimaan itse suunnitelmia. Kts. \"PROV does not specify such a notion of ancestor. Indeed, PROV does not deﬁne derivation as a transitive relation, nor does PROV deﬁne properties for all potential ancestors: for instance, there is no property to relate an activity to the plan an agent used, or to relate an activity to the starter activity that initiated it, despite the fact that the plan and the latter activity may be seen as ancestors.\" (Moreau & Groth 2013)"@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#ProperInterval> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo
+<http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Organization> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error5> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Association> .
+<http://www.w3.org/ns/prov#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#agent> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error12> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Association> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#agent> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/prov#Agent> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta> <http://www.w3.org/2000/01/rdf-schema#comment> "Tämä luokka (joka yhdistää tietyn toimijan tietyssä roolissa tiettyyn päätöksentekotapahtumaan) on luotu esimerkkinä PROV-O:n qualitied relation patternin hyödyntämisestä tietyn asian käsittelyn vaiheiden sisällön ilmaisua varten. Varsinainen hyöty tästä mallinnustavasta saavutetaan luomalla alihierarkioina eri maankäyttöasioille omat vaiheensa, ja tyypittämällä niihin kiinteästi liittyvät toimija- ja toimijaroolisuhteet. "@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka> .
+_:genid51 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Parveke
+<http://uri.suomi.fi/datamodel/ns/ryyo#Parveke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Parveke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Pergola
+<http://uri.suomi.fi/datamodel/ns/ryyo#Pergola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Pergola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia
+<http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Porras
+<http://uri.suomi.fi/datamodel/ns/ryyo#Porras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Porras> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Porras> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> .
+_:genid52 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone
+<http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia
+<http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid54 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid58 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista> .
+_:genid62 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusj\u00E4rjestys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusj\u00E4rjestys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error9> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusj\u00E4rjestys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid64 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina> .
+_:genid65 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista> .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen> .
+_:genid69 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#comment> "Rakennusvarusteet ovat kalusteita, laitteita tai muita tuotteista koostettuja kokonaisuuksia jotka voivat olla yhteydessä useampaan rakennuksen tilaan (esimerkiksi yksi ja sama sammutusjärjestelmä voi olla vain osassa rakennuksen tiloista)."@fi .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste> <http://www.w3.org/2000/01/rdf-schema#comment> "Vaikka varuste voi palvella useampaa tilaa, se muodostaa rakennuksen sisälle kuitenkin aina oman osajoukkonsa. Esimerkiksi yhteen tilaan asennettu varuste kuuluu vain kyseisen tilan sisältävään rakennuksen osajoukkoon Toisena esimerkkinä ilmanvaihtojärjestelmä muodostaa rakennuksen osajoukon johon kuuluu IV-laitteista sekä -kanavista koostuva yhtenäinen kokonaisuus. Jotkin varusteet voivat myös olla diskreeteistä osista koostuvia (eivät jatkuvia)."@fi .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error10> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava
+<http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue
+<http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Siipi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Siipi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Siipi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa> .
+_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> .
+_:genid72 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain> .
+_:genid73 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> <http://www.w3.org/2002/07/owl#disjointWith> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija
+<http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta
+<http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error11> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Association> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#agent> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/prov#Agent> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli
+<http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Terassi
+<http://uri.suomi.fi/datamodel/ns/ryyo#Terassi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Terassi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tontti
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tontti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tontti> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Torialue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Torialue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Torialue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu
+<http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Organization> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila
+<http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue
+<http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#dimension> .
+_:genid77 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko
+<http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error8> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja
+<http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja
+<http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Organization> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue
+<http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo
+<http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue
+<http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfWithin> .
+_:genid83 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onClass> <http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma
+<http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaava> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta> .
+# 
+# http://uri.suomi.fi/datamodel/ns/ryyo#Yritys
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yritys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uri.suomi.fi/datamodel/ns/ryyo#Yritys> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo> .
+# 
+# http://www.w3.org/ns/prov#Activity
+# 
+# http://www.w3.org/ns/prov#Agent
+# 
+# http://www.w3.org/ns/prov#Association
+# 
+# http://www.w3.org/ns/prov#Bundle
+# 
+# http://www.w3.org/ns/prov#Entity
+# 
+# http://www.w3.org/ns/prov#Organization
+# 
+# http://www.w3.org/ns/prov#Person
+# 
+# http://www.w3.org/ns/prov#Plan
+# 
+# http://www.w3.org/ns/prov#Role
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+# 
+_:genid85 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" .
+_:genid85 <http://ainf.aau.at/ontodebug#type> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid86 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" .
+_:genid86 <http://ainf.aau.at/ontodebug#type> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid87 <http://ainf.aau.at/ontodebug#axiom> "Kiinteisto DisjointWith RakennuksenTila" .
+_:genid87 <http://ainf.aau.at/ontodebug#type> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid90 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid91 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid96 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid97 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid103 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid104 <http://www.w3.org/2001/XMLSchema#pattern> "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*" .
+_:genid105 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid107 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid111 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid112 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid113 <http://www.w3.org/2002/07/owl#members> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid119 <http://www.w3.org/2002/07/owl#members> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid123 <http://www.w3.org/2002/07/owl#members> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid127 <http://www.w3.org/2002/07/owl#members> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusj\u00E4rjestys> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid133 <http://www.w3.org/2002/07/owl#members> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Katualue> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Torialue> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid142 <http://www.w3.org/2002/07/owl#members> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid147 <http://www.w3.org/2002/07/owl#members> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid151 <http://www.w3.org/2002/07/owl#members> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid157 <http://www.w3.org/2002/07/owl#members> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid168 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid170 <http://www.w3.org/2002/07/owl#members> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid175 <http://www.w3.org/2002/07/owl#members> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid180 <http://www.w3.org/2002/07/owl#members> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid183 .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid185 <http://www.w3.org/2002/07/owl#members> _:genid189 .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid188 .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid187 .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid186 .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid190 <http://www.w3.org/2002/07/owl#members> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Kansi> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid195 .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Katos> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Parveke> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Pergola> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid191 .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Terassi> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid197 <http://www.w3.org/2002/07/owl#members> _:genid201 .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid198 .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid202 <http://www.w3.org/2002/07/owl#members> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid206 <http://www.w3.org/2002/07/owl#members> _:genid210 .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid209 .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid208 .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid211 <http://www.w3.org/2002/07/owl#members> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid214 .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid213 .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid216 <http://www.w3.org/2002/07/owl#members> _:genid219 .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid218 .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid217 .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uri.suomi.fi/datamodel/ns/ryyo#Tontti> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

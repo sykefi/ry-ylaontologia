@@ -1,0 +1,2853 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "http://uri\\.suomi\\.fi/codelist/rytj/Paloluokka/.*"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Katualue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Torialue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "[0-9]+[A-ZÖÅÄ]+[a-zöåä]+"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid170",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid175",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "1[0-9]{8}[A-ZÖÅÄ]"
+  } ]
+}, {
+  "@id" : "_:genid180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid185",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid190",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kansi"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Katos"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Parveke"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Pergola"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Terassi"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid197",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid202",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid206",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "http://uri\\.suomi\\.fi/codelist/rakrek/rakelinvaih.*"
+  } ]
+}, {
+  "@id" : "_:genid211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid216",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue"
+    }, {
+      "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tontti"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#pattern" : [ {
+    "@value" : "[0-9]{14}"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid6"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#hasSerialization"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta"
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "http://ainf.aau.at/ontodebug#axiom" : [ {
+    "@value" : "Kiinteisto DisjointWith RakennuksenTila"
+  } ],
+  "http://ainf.aau.at/ontodebug#type" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "http://ainf.aau.at/ontodebug#axiom" : [ {
+    "@value" : "Kiinteisto DisjointWith RakennuksenTila"
+  } ],
+  "http://ainf.aau.at/ontodebug#type" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "http://ainf.aau.at/ontodebug#axiom" : [ {
+    "@value" : "Kiinteisto DisjointWith RakennuksenTila"
+  } ],
+  "http://ainf.aau.at/ontodebug#type" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://ainf.aau.at/ontodebug#axiom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://ainf.aau.at/ontodebug#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "fi",
+    "@value" : "Johanna Jalas"
+  }, {
+    "@language" : "fi",
+    "@value" : "Marko Kauppi"
+  }, {
+    "@language" : "fi",
+    "@value" : "Riikka Huttunen"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "fi",
+    "@value" : "Otso Helenius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Ontologia on tuotettu RYTJ:n käsite- ja loogisen tietomallin tuottamisen ohessa, ja se on tämän version kuvaamassa muodossa karkea luonnos RYTJ:n hallinnoimien rakennetun ympäristön tietojen formaalista semanttisesta rakenteesta OWL-ontologiana. Tätä mallia tulkitessa tulee huomioida, että ontologia on tuotettu hyvin nopealla aikataululla laajasta lähtöaineistosta ja sitä ei ole validoitu tuotantokäyttöön."
+  }, {
+    "@language" : "fi",
+    "@value" : "Ontologiaan ei ole vielä ydistetty suoraan SKOS-muotoista RYTJ-sanastoa kuvaamaan luokkia vastaavia käsitteitä; käsitevastaavuudet voi tarkistaa Y-alustalta (http://uri.suomi.fi/terminology/rytj/). Rakenteen vastaavuus prosesseja, niiden osia ym. kuvaavien käsitteiden osalta ei ole identtinen johtuen käytetyn PROV-O-ontologian ylärakenteiden noudattamisesta."
+  }, {
+    "@language" : "fi",
+    "@value" : "Ontologian dokumentaatio on generoity pyLODElla ontdoc-profiilia. Valitettavasti kyseinen profiili ei oletuksena kuvaa kompleksisempia ominaisuusrajoitteita (esim. xsd:pattern) eikä esitä datatyyppejä. Profiilista ehdittiin projektin aikana tehdä minimaalisesti päivitetty versio joka ei kuitenkaan vielä kata näitä puutteita."
+  }, {
+    "@language" : "fi",
+    "@value" : "Ontologian tuottamisessa on selvitetty W3C:n Time-ontologian käyttöä ajallisten entiteettien kuvailuun, OGC:n GeoSPARQL-ontologian käyttöä spatiaalisten entiteettien kuvailuun, W3C:n PROV-O-ontologian käyttöä subjektien, toiminnan ja toiminnan kohteiden välisen tapahtuma- ja muutoshistorian kuvailuun, sekä IFCOWL-ontologian käyttöä rakennustietovarannon entiteettien määrittämiseen. Näistä GeoSPARQL, PROV-O ja Time ovat alustavasti ehdotusluonteisesti käytössä maankäyttökohteille sekä prosesseille. GeoSPARQL:stä käytössä on vakaa 1.0-versio, sillä 1.1 on epävakaa ja edelleen aktiivisesti työn alla. Tämä kuitenkin tarkoittaa sitä, että tämä malli ei pääse hyötymään lukuisista 1.1:een tehdyistä parannuksista ja korjauksista."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tämän ontologian tulkitsemiseen suositellaan seuraavia helppolukuisia teoksia: 1) Moreau, L., & Groth, P. (2013). Provenance: An introduction to PROV. Morgan & Claypool. https://doi.org/10.2200/S00528ED1V01Y201308WBE007 2) Uschold, M. (2018). Demystifying OWL for the Enterprise. Synthesis Lectures on the Semantic Web: Theory and Technology, 8(1), i–237. https://doi.org/10.2200/S00824ED1V01Y201801WBE017 3) Lappalainen, M. (2014). Yläontologiat ja yleisen suomalaisen ontologian ylärakenne: ONKI-projektin toteuttamat muutokset. Kansalliskirjasto. http://urn.fi/URN:ISBN:978-951-51-0347-5"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  }, {
+    "@id" : "http://www.opengis.net/ont/sf"
+  }, {
+    "@id" : "http://www.w3.org/2006/time"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "fi",
+    "@value" : "synkronointi RYTJ-käsitemallin kanssa tehty viimeksi 26.11.2021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "RYTJ:n Rakennetun Ympäristön YläOntologia (RYYO)"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+  }, {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Aluerakentamiskohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huone"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Asuinhuoneisto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ehdotussuunnittelu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Energiatodistus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#ErityisalanTyonjohtaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Erityisalue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#ErityisharkintaAlue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Erityissuunnittelija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Esitonttikohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Hankesuunnittelu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "huoneistoilla voi olla itse rakennuksesta tai sen sijaintikiinteistö(i)stä eroavat omistajat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Hyvaksyminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error6"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error7"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAlue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KaavaAsia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavapaatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatietomalli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavasuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavatontti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+  }, {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoittaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavoitusmenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kansi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Katos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Katualue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Katusuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistaminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaynnistamispaatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error4"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kerros",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonHaltija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#KiinteistonOmistaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteistotoimitusmenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kortteli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kumoaminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kumoutuminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kunta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kuuleminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kuulutus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Lamelli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Lausuntopyynto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Loppukatselmus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Luhtikaytava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#LuonnollinenHenkilo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Person"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaakunnanLiitto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maakuntakaava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoittaminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Bundle"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"
+  }, {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid46"
+  }, {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Prosessien yhteys muihin entiteetteihin tässä ontologiassa jää ohueksi, sillä ne eivät PROV-O:ssa ole samassa asemassa kuin ensisijaiset toimijat, entiteetit ja aktiviteetit. Tässä ontologiassa ei keskitytä revisioimaan itse suunnitelmia. Kts. \"PROV does not specify such a notion of ancestor. Indeed, PROV does not deﬁne derivation as a transitive relation, nor does PROV deﬁne properties for all potential ancestors: for instance, there is no property to relate an activity to the plan an agent used, or to relate an activity to the starter activity that initiated it, despite the fact that the plan and the latter activity may be seen as ancestors.\" (Moreau & Groth 2013)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Plan"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#ProperInterval"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttorajoitusmenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttotieto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaapoliittinenOhjelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error3"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaaraAla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyoasia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupahakemus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maisematyolupamenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#NahtavilleAsettaminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Osallinen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallisenToiminta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error5"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Association"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsallistumisJaArvointisuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#OsittainenLoppukatselmus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Paapiirustukset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Paasuunnittelija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Paatoksentekija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaatoksentekijanToiminta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Tämä luokka (joka yhdistää tietyn toimijan tietyssä roolissa tiettyyn päätöksentekotapahtumaan) on luotu esimerkkinä PROV-O:n qualitied relation patternin hyödyntämisestä tietyn asian käsittelyn vaiheiden sisällön ilmaisua varten. Varsinainen hyöty tästä mallinnustavasta saavutetaan luomalla alihierarkioina eri maankäyttöasioille omat vaiheensa, ja tyypittämällä niihin kiinteästi liittyvät toimija- ja toimijaroolisuhteet. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error12"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Association"
+  }, {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaavastuullinenToteuttaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PaloOsasto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  }, {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Parveke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Pergola",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PoikkeamislupaAsia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupahakemus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poikkeamislupamenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Poistumisalue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Porras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Porrashuone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Puistoalue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Purkamisilmoitusmenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#PurkamislupaAsia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Purkamislupamenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakenne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+  }, {
+    "@id" : "_:genid53"
+  }, {
+    "@id" : "_:genid54"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+  }, {
+    "@id" : "_:genid55"
+  }, {
+    "@id" : "_:genid56"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde"
+  }, {
+    "@id" : "_:genid59"
+  }, {
+    "@id" : "_:genid60"
+  }, {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennushanke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusjärjestys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error9"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasiakirja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskielto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennuskohde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+  }, {
+    "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
+  }, {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusosa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error2"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnittelija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenSuunnittelija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustarkastaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennustuote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvaruste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Rakennusvarusteet ovat kalusteita, laitteita tai muita tuotteista koostettuja kokonaisuuksia jotka voivat olla yhteydessä useampaan rakennuksen tilaan (esimerkiksi yksi ja sama sammutusjärjestelmä voi olla vain osassa rakennuksen tiloista)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Vaikka varuste voi palvella useampaa tilaa, se muodostaa rakennuksen sisälle kuitenkin aina oman osajoukkonsa. Esimerkiksi yhteen tilaan asennettu varuste kuuluu vain kyseisen tilan sisältävään rakennuksen osajoukkoon Toisena esimerkkinä ilmanvaihtojärjestelmä muodostaa rakennuksen osajoukon johon kuuluu IV-laitteista sekä -kanavista koostuva yhtenäinen kokonaisuus. Jotkin varusteet voivat myös olla diskreeteistä osista koostuvia (eivät jatkuvia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid67"
+  }, {
+    "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamislupaAsia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennusvalvontaAsia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupahakemus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupamenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamislupapaatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error10"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttopaatos"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamisrajoitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakentamistoimenpide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennusvalvontaprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RantaAsemakaava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Asemakaava"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Raukeaminen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rekisteritontti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RekisteroityYleinenAlue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Siipi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttolupa"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sijoittamislupahakemus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttohakemus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisaankaynti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid71"
+  }, {
+    "@id" : "_:genid72"
+  }, {
+    "@id" : "_:genid73"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SivuUrakoitsija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Suojelualue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#SuunnittelijanToiminta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error11"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Association"
+  }, {
+    "@id" : "_:genid74"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Suunnittelumalli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennussuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tarveselvitys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid75"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Terassi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tietojarjestelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#SoftwareAgent"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Toimenpiderajoitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankaytonRajoitus"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tontti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakoasia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoasia"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tonttijakomenettely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttoprosessi"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Torialue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Toteutussuunnittelu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid76"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tuomioistuin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Ulkotila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#VaaraAlue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vaestonsuoja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Sisatila"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vaikutusalue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Alueidenkayttokohde"
+  }, {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#ValituksenTeko",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error8"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid78"
+  }, {
+    "@id" : "_:genid79"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Valvoja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennushankkeenToimija"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#VastaavaTyonjohtaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Tyonjohtaja"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vesialue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranhaltija",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomainen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Viranomaiskatselmus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid80"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Vireilletulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid81"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#VirkistysJaMatkailualue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Voimaantulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#MaankayttoprosessinOsa"
+  }, {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Yhdistys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleinenAlue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+  }, {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#YleisenAlueenSuunnitelma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttosuunnitelma"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Yleiskaava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaava"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Yleissuunnittelu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakentamistoimenpiteenOsa"
+  }, {
+    "@id" : "_:genid84"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Yritys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Oikeushenkilo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineellisistaOsista",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuAineettomistaOsista",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#koostuuOsista",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#kuutiometri",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "tilapäinen datatyyppi kuutiometrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "tilapäinen datatyyppi neliömetrejä ilmaisevalle tiedolle (tulisi korvata esim. SI-järjestelmää kuvaavan ontologian metriikalla)"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onBruttoalaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onHuoneistoalaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onKayttoalaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onKerroksiaKpl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onKerrosalaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onKerrostasoalaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onKiinteistotunnus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kiinteisto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#kiinteistotunnus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "tämän ominaisuuden aliominaisuuksia ovat kaikki jonkin metriikan mukaiset ominaisuudet (pinta-alat, tilavuudet jne.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPaloluokka",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Paloluokitus määrittyy koodiston mukaan. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Maankayttokohde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPorraskirjain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaHuoneistotunnus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Huoneisto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaRakennustunnus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Rakennus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPysyvaTilatunnus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenTila"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanElinkaarenTila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Rakennuksen osan elinkaaren tila määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan elinkaaren tilan määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennuksenOsanKaytonTila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Rakennuksen osan käyttö määrittyy koodiston mukaan, tässä on päädytty kohdentamaan ominaisuus rakennuksen osaan, sillä se mahdollistaa esimerkiksi rakennuksen siipien toisistaan poikkeavan käytössäolotilanteen määrittämisen. Koodistoja ei voi tällä hetkellä hyödyntää upottamalla ontologiaan ulkoisesta lähteestä importin kautta, sillä Y-alustan rajapinta tarjoaa niitä vain JSON-muodossa (ei esim. JSON-LD, Turtle, tai RDF/XML)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#RakennuksenOsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#Kaavakohde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKerrosalaNelioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#neliometri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onPintaAlaaNelioina"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeuttaKuutioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onRakennusoikeutta"
+  }, {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onTilavuuttaKuutioina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onMetriikkaArvo"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYhteydessa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "ilmaisee kahden kohdeen välistä spatiaalista yhteyttä"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#onYksiloivaTunniste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#paloluokka",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "tietotyyppi paloluokituksen koodiston enumeraatioille"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#porraskirjain",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaHuoneistotunnus",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaRakennustunnus",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#pysyvaTilatunnus",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#rakennuksenElinkaarenTila",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "tietotyyppi rakennuksen elinkaaren koodiston enumeraatioille"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://uri.suomi.fi/datamodel/ns/ryyo#sisaltyyKohteeseen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Huom! Tämä on puhdas ad-hoc -relaatio joka tulisi korvata OGC:n SF:ää yleispäteävmmällä ontologialla joka mahdollistaa topologisten suhteiden ilmaisemisen myös muiden kuin kaksiulotteisten entiteettien osalta. Relaatio ei ole transitiivinen, koska tämän tarkoituksena on yksikäsitteisesti ilmaista, mihin yhteen ja vain yhteen kohteeseen tietty kohde kuuluu (esimerkiksi että jokainen tila kuuluu yhteen ja vain yhteen rakennukseen, sen sijaan yksi tila voi kuulua useaan eri rakennuksen osaan koska kyseiset ositukset voivat olla leikkaavia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#minInclusive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Bundle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#SoftwareAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
