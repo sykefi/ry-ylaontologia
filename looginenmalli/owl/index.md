@@ -4,7 +4,7 @@ title: ""
 description: ""
 id: "owl"
 frame-src: "webvowl/index.html"
-frame-height: "800"
+frame-height: "1024"
 ---
 # OWL/RDF -muotoinen ontologia
 
